@@ -39,6 +39,23 @@ its neighbors?
     
     </script>
 
+Did you wish you could, given a table cell, know its X and Y coordinates?
+
+    <script src="coordinate.js"></script>
+    <script>
+
+        var table = document.getElementsByTagName('table')[0];
+        coordinate(table);
+
+        var cells = table.getElementsByTagName('td');
+
+        for (var i=0,td; td=cells[i]; ++i)
+            td.onclick = function () {
+                console.log('You just clicked on the cell at ' + this.x + ',' + this.y);
+            };
+
+    </script>
+
 I've barely tested this thing (though I *did* test it against table
 cells with colspans), and only on browsers that rhyme with
 "buyer stocks bee shot live". Enjoy.

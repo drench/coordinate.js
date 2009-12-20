@@ -29,6 +29,8 @@ function coordinate(table) {
                         ++x;
                         if (! table.coordinates[x]) table.coordinates[x] = [];
                         table.coordinates[x][y] = col;
+                        col.x = x;
+                        col.y = y;
                     }
                 }
             }
