@@ -1,3 +1,17 @@
+/*
+
+Coordinate.js allows you to address HTML table cells by (x,y) coordinates,
+and know cell neighbors with north/south/east/west references
+
+http://dren.ch/js-table-coordinates/
+
+Copyright 2009 Daniel Rench
+
+MIT licensed; see the LICENSE file bundled with its distribution at
+https://github.com/drench/coordinate.js
+
+*/
+
 function coordinate(table) {
 
     table.coordinates = [];
