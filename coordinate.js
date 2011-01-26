@@ -36,7 +36,7 @@ function coordinate(table) {
             ++y;
             for (cn in row.childNodes) {
                 col = row.childNodes[cn];
-                if (col.tagName && col.tagName.match(/^td$/i)) {
+                if (col.tagName && col.tagName.match(/^t[dh]$/i)) {
                     var colspan = col.getAttribute('colspan');
                     if (! colspan) colspan = 1;
                     while (colspan--) {
